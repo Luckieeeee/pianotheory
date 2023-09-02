@@ -1,0 +1,18 @@
+
+{% extends 'chords/base.html' %}
+
+{% block title %}Chord Home{% endblock %}
+
+{% block content %}
+    <h1>Welcome to the Chord Generator!</h1>
+    <p>Select a difficulty level to start generating chords.</p>
+    
+    <!-- Buttons to navigate to specific difficulty levels -->
+    <div class="btn-group" role="group" aria-label="Difficulty Levels">
+        <a href="/chords/level1" class="btn-level">Level 1</a>
+        <a href="/chords/level2" class="btn-level">Level 2</a>
+        <!-- Add more buttons for additional levels -->
+    </div>
+
+{% endblock %}
+

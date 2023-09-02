@@ -1,0 +1,18 @@
+{% extends 'chords/base.html' %}
+{% load static %}
+
+{% block content %}
+<h1>Level {{ level }} - Identify the chord</h1>
+
+<h2>{{ chord }}</h2>
+
+<form id="chord-form">
+    <input type="hidden" id="correct-answer" value="{{ chord_type }}">
+    <button type="button" class="chord-button" data-chord-type="major">Major</button>
+    <button type="button" class="chord-button" data-chord-type="minor">Minor</button>
+    <button type="button" class="chord-button" data-chord-type="perfect">Perfect</button>
+</form>
+
+<script src="{% static 'chords/noteCheck.js' %}"></script>
+
+{% endblock %}

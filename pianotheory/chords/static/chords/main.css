@@ -1,0 +1,25 @@
+
+
+.btn-level {
+    background-color: #007bff;  /* Blue */
+    margin-right: 25px;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+    padding: 20px 40px;
+    transition: background-color 0.3s, transform 0.3s;  /* Smooth transition for hover effect */
+    border-radius: 8px;  /* Rounded corners */
+  }
+  
+  .btn-level:hover {
+    background-color: #0056b3;  /* Darker blue */
+    transform: scale(1.05);  /* Slightly scale the button */
+  }
+  
+  .btn-level:active {
+    background-color: #004999;  /* Even darker blue when active/clicked */
+    transform: scale(0.95);  /* Slightly scale down the button when clicked */
+  }
+  
